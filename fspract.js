@@ -13,6 +13,13 @@ fs.writeFile(savepath,data,function(err){
     err? console.log("Err : ",err) : console.log("Write Sucessful");
 })
 }
+function appendFile(filepath,data){
+    fs.appendFile(filepath,data,function(err){
+        err? console.log("Err : ",err) : console.log("Append Sucessful");
+    })
+    }
 readFile("./helloworld.js");
 writeFile("./asim.txt","Hello I am asim !");
+readFile("./asim.txt");
+appendFile("./asim.txt","My caste is soomro & I am developer");
 readFile("./asim.txt");
