@@ -10,7 +10,7 @@ function readFile(srcpath){
 
 function writeFile(savepath,data){
 fs.writeFile(savepath,data,function(err){
-    err? console.log("Err : ",err) : console.log("Write Sucessful");
+    err? console.log("Err: ",err) : console.log("Write Sucessful");
 })
 }
 function appendFile(filepath,data){
