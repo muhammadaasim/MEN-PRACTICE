@@ -14,7 +14,7 @@ var server = http.createServer(function (request, response) {
         response.write(JSON.stringify(users));
         response.end();
     } else {
-        response.write('<h1>Hello World</h1> <h2>'+request.url+'</h2>');
+        response.write('<h1>Hello  World</h1> <h2>'+request.url+'</h2>');
         response.end();
     }   
 })
