@@ -26,7 +26,7 @@ app.post('/',(req,res)=>{
 app.get('/',function (req,res){
     // res.send('hello world!');
     // res.sendFile(__dirname+'/public/index.html')
-    res.send(JSON.stringify(req.body));
+    res.send(JSON.stringify(req.query));
 });
 
 
