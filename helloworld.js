@@ -21,7 +21,6 @@ app.post('/',(req,res)=>{
 })
 
 
-
 //Get Request html file response
 
 app.get('/',function (req,res){
@@ -31,7 +30,7 @@ app.get('/',function (req,res){
 });
 
 
-//Get request with JSON Response
+// Get request with JSON Response
 
 app.get('/users',function (req,res){
    res.json([{id:1,name:"aasim",caste:'soomro'},{id:2,name:'mohsin',caste:'soomro'}]);
