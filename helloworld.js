@@ -19,7 +19,7 @@ app.get('./public',express.static(__dirname+'/public'));
 app.post('/',(req,res)=>{
     res.end(JSON.stringify(req.body))
     console.log("server received post request");
-    console.log(req.query);})
+    console.log(JSON.stringify(req.body));})
 
 
 //Get Request html file response
@@ -27,7 +27,9 @@ app.post('/',(req,res)=>{
 app.get('/',function (req,res){
     // res.send('hello world!');
     // res.sendFile(__dirname+'/public/index.html')
-    res.send(JSON.stringify(req.query));
+    // res.send(JSON.stringify(req.query));
+    res.send(JSON.stringify(req.body));
+
 });
 
 
