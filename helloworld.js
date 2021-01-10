@@ -37,5 +37,5 @@ app.get('/users',function (req,res){
 })
 
 app.listen(3001,function(){
-    console.log(`Express started at http://localhost:3001`)
+    console.log(`Express started at  http://localhost:3001`)
 });
